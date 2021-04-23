@@ -24,7 +24,7 @@
 
         }
 
-        public function acao(){
+        public function acao($nivel_a){
             switch ($nivel_a) {
                 case 1:
                     $this->ler();
@@ -48,19 +48,29 @@
         }
 
         public function ler(){
+            
+            echo "<pre>";
             echo "Lendo";
+            echo "</pre>"; 
+         
         }
 
         public function inserir(){
-            echo "Inserindo";
+            echo "<pre>";
+            echo "inserindo";
+            echo "</pre>"; 
         }
 
         public function alterar(){
-            echo "Alterando";
+            echo "<pre>";
+            echo "alterando";
+            echo "</pre>"; 
         }
 
         public function excluir(){
-            echo "Excluindo";
+            echo "<pre>";
+            echo "excluindo";
+            echo "</pre>"; 
         }
 
         public function get_id(){
